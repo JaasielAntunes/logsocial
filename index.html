@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jaasiel Antunes" />
+
+    <link rel="icon" type="image/x-icon" href="images/icone.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <title>Rede Social - LogSocial</title>
+  </head>
+  <body>
+    <header>
+      <!-- inicio navegação -->
+      <nav>
+        <div class="container">
+          <a href="#">
+            <h2 class="logo">Log<span id="logo-social">Social</span></h2>
+          </a>
+          <div class="pesquisa-bar">
+            <i class="uil uil-search"></i>
+            <input
+              type="search"
+              placeholder="Busque por criadores, nomes, palavras chaves"
+            />
+          </div>
+          <div class="criar">
+            <label class="btn btn-primario" for="criar-post">Criar</label>
+            <div class="foto-perfil">
+              <a href="#"
+                ><img src="images/perfil1.jpeg" alt="foto-perfil 1"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- fim navegação -->
+    </header>
+
+    <!-- inicio principal -->
+    <main>
+      <div class="container">
+        <!-- inicio esquerda -->
+        <div class="esquerda">
+          <a href="#" class="perfil">
+            <div class="foto-perfil">
+              <img src="images/perfil1.jpeg" alt="foto-perfil 1" />
+            </div>
+            <div class="handle">
+              <h4 class="cor-fonte-barra-lateral">Kate Carvalho</h4>
+              <p class="texto-mudo cor-fonte-barra-lateral">@kate.cv</p>
+            </div>
+          </a>
+
+          <!-- inicio da barra lateral -->
+          <div class="barra-lateral">
+            <a href="#" class="menu-item active">
+              <span><i class="uil uil-estate"></i></span>
+              <h3 class="cor-fonte-barra-lateral">Home</h3>
+            </a>
+
+            <a href="#" class="menu-item">
+              <span><i class="uil uil-compass"></i></span>
+              <h3 class="cor-fonte-barra-lateral">Explorar</h3>
+            </a>
+
+            <a href="#" class="menu-item" id="notificacoes">
+              <span
+                ><i class="uil uil-bell"
+                  ><small class="contagem-notificacoes">7+</small></i
+                ></span
+              >
+              <h3 class="cor-fonte-barra-lateral">Notificações</h3>
+              <!-- NOTIFICAÇÃO POP-UP -->
+              <div class="notificacao-popup">
+                <div>
+                  <div class="foto-perfil">
+                    <img src="images/perfil2.jpg" alt="foto-perfil 2" />
+                  </div>
+                  <div class="notificacao-corpo">
+                    <b>Alex Carev</b> aceitou sua solicitação para seguir
+                    <small>1 dia atrás</small>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="foto-perfil">
+                    <img src="images/perfil3.jpg" alt="foto-perfil 3" />
+                  </div>
+                  <div class="notificacao-corpo">
+                    <b>Meredith Grey</b> aceitou sua solicitação para seguir
+                    <small>3 horas atrás</small>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="foto-perfil">
+                    <img src="images/perfil4.png" alt="foto-perfil 4" />
+                  </div>
+                  <div class="notificacao-corpo">
+                    <b>Jon Snow</b> aceitou sua solicitação para seguir
+                    <small>12 horas atrás</small>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="foto-perfil">
+                    <img src="images/perfil5.jpg" alt="foto-perfil 5" />
+                  </div>
+                  <div class="notificacao-corpo">
+                    <b>Daenerys Targaryen</b> aceitou sua solicitação para
+                    seguir
+                    <small>10 minutos atrás</small>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- NOTIFICAÇÃO POP-UP -->
+            <a href="#" class="menu-item" id="mensagens-notificacoes">
+              <span
+                ><i class="uil uil-envelope"
+                  ><small class="contagem-notificacoes">9</small></i
+                ></span
+              >
+              <h3 class="cor-fonte-barra-lateral">Mensagens</h3>
+            </a>
+
+            <a href="#" class="menu-item">
+              <span><i class="uil uil-bookmark-full"></i></span>
+              <h3 class="cor-fonte-barra-lateral">Marcações</h3>
+            </a>
+
+            <a href="#" class="menu-item">
+              <span><i class="uil uil-chart-line"></i></span>
+              <h3 class="cor-fonte-barra-lateral">Análises</h3>
+            </a>
+
+            <a href="#" class="menu-item" id="tema">
+              <span><i class="uil uil-palette"></i></span>
+              <h3 class="cor-fonte-barra-lateral">Tema</h3>
+            </a>
+
+            <a href="#" class="menu-item">
+              <span><i class="uil uil-setting"></i></span>
+              <h3 class="cor-fonte-barra-lateral">Configurações</h3>
+            </a>
+          </div>
+
+          <!-- fim da barra lateral -->
+          <label for="criar-post" class="btn btn-primario">Criar Post</label>
+        </div>
+        <!-- fim esquerda -->
+
+        <!-- inicio meio -->
+        <div class="meio">
+          <!-- parte dos stories -->
+          <div class="stories">
+            <!-- inicio stories -->
+            <div class="story">
+              <div class="foto-perfil">
+                <img src="images/perfil1.jpeg" alt="foto-perfil 1" />
+              </div>
+              <p class="nome-story">Seu Story</p>
+            </div>
+
+            <div class="story">
+              <div class="foto-perfil">
+                <img src="images/perfil6.jpg" alt="foto-perfil 6" />
+              </div>
+              <p class="nome-story">Sansa Stark</p>
+            </div>
+
+            <div class="story">
+              <div class="foto-perfil">
+                <img src="images/perfil7.jpg" alt="foto-perfil 7" />
+              </div>
+              <p class="nome-story">Arya Stark</p>
+            </div>
+
+            <div class="story">
+              <div class="foto-perfil">
+                <img src="images/perfil8.png" alt="foto-perfil 8" />
+              </div>
+              <p class="nome-story">Bran Stark</p>
+            </div>
+
+            <div class="story">
+              <div class="foto-perfil">
+                <img src="images/perfil4.png" alt="foto-perfil 9" />
+              </div>
+              <p class="nome-story">Jon Snow</p>
+            </div>
+          </div>
+          <!-- fim stories -->
+
+          <form action="" class="criar-post">
+            <div class="foto-perfil">
+              <img src="images/perfil1.jpeg" alt="foto-perfil 1" />
+            </div>
+            <input
+              type="text"
+              name="post"
+              id="criar-post"
+              placeholder="No que você está pensando, Kate?"
+            />
+            <input
+              type="submit"
+              value="Postar"
+              class="btn btn-primario btn-fonte"
+            />
+          </form>
+
+          <!-- inicio feeds -->
+          <div class="feeds">
+            <!-- inicio feed 1 -->
+            <div class="feed">
+              <div class="cabecalho">
+                <div class="usuario">
+                  <div class="foto-perfil">
+                    <img src="images/perfil3.jpg" alt="foto-perfil 3" />
+                  </div>
+                  <div class="ingo">
+                    <h3>Meredith Grey</h3>
+                    <small>Los Angeles, CA, 15 minutos atrás</small>
+                  </div>
+                </div>
+                <span class="editar">
+                  <i class="uil uil-ellipsis-h cursor-botoes"></i>
+                </span>
+              </div>
+
+              <div class="foto-feed">
+                <img src="images/feed1.jpg" alt="imagem feed 1" />
+              </div>
+
+              <div class="btn-acao">
+                <div class="btn-interacao">
+                  <span><i class="uil uil-heart-alt cursor-botoes"></i></span>
+                  <span><i class="uil uil-comment-dots cursor-botoes"></i></span>
+                  <span><i class="uil uil-share-alt cursor-botoes"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span><i class="uil uil-bookmark-full cursor-botoes"></i></span>
+                </div>
+              </div>
+
+              <div class="curtidas">
+                <span
+                  ><img src="images/perfil4.png" alt="imagem perfil 5"
+                /></span>
+                <span
+                  ><img src="images/perfil8.png" alt="imagem perfil 8"
+                /></span>
+                <span
+                  ><img src="images/perfil2.jpg" alt="imagem perfil 3"
+                /></span>
+                <p>Curtido por <b>Jon Snow</b> e mais 297 pessoas</p>
+              </div>
+
+              <div class="caption">
+                <p>
+                  <b>Meredith Grey</b> está curtindo a vista...
+                  <span class="hash-tag"> #lifestyle </span>
+                </p>
+              </div>
+              <div class="comentarios texto-mudo">Ver os 93 comentários</div>
+            </div>
+            <!-- fim feed 1 -->
+            <!-- inicio feed 2 -->
+            <div class="feed">
+              <div class="cabecalho">
+                <div class="usuario">
+                  <div class="foto-perfil">
+                    <img src="images/mike-ross.jpg" alt="foto mike-ross" />
+                  </div>
+                  <div class="ingo">
+                    <h3>Mike Ross</h3>
+                    <small>Rio de Janeiro, BR, 1 hora atrás</small>
+                  </div>
+                </div>
+                <span class="editar">
+                  <i class="uil uil-ellipsis-h"></i>
+                </span>
+              </div>
+
+              <div class="foto-feed">
+                <img src="images/feed2.jpg" alt="imagem feed 2" />
+              </div>
+
+              <div class="btn-acao">
+                <div class="btn-interacao">
+                  <span><i class="uil uil-heart-alt"></i></span>
+                  <span><i class="uil uil-comment-dots"></i></span>
+                  <span><i class="uil uil-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span><i class="uil uil-bookmark-full"></i></span>
+                </div>
+              </div>
+
+              <div class="curtidas">
+                <span
+                  ><img src="images/perfil4.png" alt="imagem perfil 5"
+                /></span>
+                <span
+                  ><img src="images/perfil8.png" alt="imagem perfil 8"
+                /></span>
+                <span
+                  ><img src="images/perfil2.jpg" alt="imagem perfil 3"
+                /></span>
+                <p>Curtido por <b>Meredith Grey</b> e mais 430 pessoas</p>
+              </div>
+
+              <div class="caption">
+                <p>
+                  <b>Mike Ross</b> está em Rio de Janeiro
+                  <span class="hash-tag"> #viajandoporai </span>
+                </p>
+              </div>
+              <div class="comentarios texto-mudo">Ver os 400 comentários</div>
+            </div>
+            <!-- fim feed 2 -->
+            <!-- inicio feed 3 -->
+            <div class="feed">
+              <div class="cabecalho">
+                <div class="usuario">
+                  <div class="foto-perfil">
+                    <img src="images/izzy.jpg" alt="foto-izzy" />
+                  </div>
+                  <div class="ingo">
+                    <h3>Izzy</h3>
+                    <small>Montreal, CA, 22 horas atrás</small>
+                  </div>
+                </div>
+                <span class="editar">
+                  <i class="uil uil-ellipsis-h"></i>
+                </span>
+              </div>
+
+              <div class="foto-feed">
+                <img src="images/montreal.jpg" alt="imagem montreal" />
+              </div>
+
+              <div class="btn-acao">
+                <div class="btn-interacao">
+                  <span><i class="uil uil-heart-alt"></i></span>
+                  <span><i class="uil uil-comment-dots"></i></span>
+                  <span><i class="uil uil-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span><i class="uil uil-bookmark-full"></i></span>
+                </div>
+              </div>
+
+              <div class="curtidas">
+                <span
+                  ><img src="images/perfil4.png" alt="imagem perfil 5"
+                /></span>
+                <span
+                  ><img src="images/perfil8.png" alt="imagem perfil 8"
+                /></span>
+                <span
+                  ><img src="images/perfil2.jpg" alt="imagem perfil 3"
+                /></span>
+                <p>Curtido por <b>Alex Carev</b> e mais 570 pessoas</p>
+              </div>
+
+              <div class="caption">
+                <p>
+                  <b>Izzy</b> está curtindo as férias...
+                  <span class="hash-tag"> #lifestyle </span>
+                </p>
+              </div>
+              <div class="comentarios texto-mudo">Ver os 539 comentários</div>
+            </div>
+            <!-- fim feed 3 -->
+            <!-- inicio feed 4 -->
+            <div class="feed">
+              <div class="cabecalho">
+                <div class="usuario">
+                  <div class="foto-perfil">
+                    <img src="images/barry.jpg" alt="foto-barry-allen" />
+                  </div>
+                  <div class="ingo">
+                    <h3>Barry Allen</h3>
+                    <small>Paris, FR, 2 minutos atrás</small>
+                  </div>
+                </div>
+                <span class="editar">
+                  <i class="uil uil-ellipsis-h"></i>
+                </span>
+              </div>
+
+              <div class="foto-feed">
+                <img src="images/paris.jpg" alt="imagem Paris" />
+              </div>
+
+              <div class="btn-acao">
+                <div class="btn-interacao">
+                  <span><i class="uil uil-heart-alt"></i></span>
+                  <span><i class="uil uil-comment-dots"></i></span>
+                  <span><i class="uil uil-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span><i class="uil uil-bookmark-full"></i></span>
+                </div>
+              </div>
+
+              <div class="curtidas">
+                <span
+                  ><img src="images/perfil4.png" alt="imagem perfil 5"
+                /></span>
+                <span
+                  ><img src="images/perfil8.png" alt="imagem perfil 8"
+                /></span>
+                <span
+                  ><img src="images/perfil2.jpg" alt="imagem perfil 3"
+                /></span>
+                <p>Curtido por <b>Izzy</b> e mais 86 pessoas</p>
+              </div>
+
+              <div class="caption">
+                <p>
+                  <b>Barry Allen</b> está participando de um evento...
+                  <span class="hash-tag"> #lifestyle </span>
+                </p>
+              </div>
+              <div class="comentarios texto-mudo">Ver os 70 comentários</div>
+            </div>
+            <!-- fim feed 4 -->
+          </div>
+          <!-- fim feeds -->
+        </div>
+        <!-- fim meio -->
+
+        <!-- inicio direita -->
+        <div class="direita">
+          <!-- inicio mensagens -->
+          <div class="mensagens">
+            <div class="heading">
+              <h4>Mensagens</h4>
+              <i class="uil uil-edit"></i>
+            </div>
+
+            <!-- inicio barra de pesquisa -->
+            <div class="pesquisa-bar">
+              <i class="uil uil-search"></i>
+              <input
+                type="search"
+                placeholder="Pesquise por mensagens"
+                id="mensagens-pesquisa"
+              />
+            </div>
+            <!-- fim barra de pesquisa -->
+
+            <!-- inicio categoria -->
+            <div class="categoria">
+              <h6 class="active">Primária</h6>
+              <h6>Geral</h6>
+              <h6 class="solicitacao-msg">Solicitações(10)</h6>
+            </div>
+            <!-- fim categoria -->
+
+            <div class="mensagem">
+              <div class="foto-perfil">
+                <img src="images/msg1.jpg" alt="mensagem 1" />
+              </div>
+
+              <div class="mensagem-corpo">
+                <h5>Cristina Alves</h5>
+                <p class="texto-bold">3 novas mensagens</p>
+              </div>
+            </div>
+
+            <div class="mensagem">
+              <div class="foto-perfil">
+                <img src="images/msg2.jpg" alt="mensagem 2" />
+                <div class="active"></div>
+              </div>
+
+              <div class="mensagem-corpo">
+                <h5>Andrew Deluca</h5>
+                <p class="texto-bold">3 novas mensagens</p>
+              </div>
+            </div>
+
+            <div class="mensagem">
+              <div class="foto-perfil">
+                <img src="images/msg3.jpeg" alt="mensagem 3" />
+              </div>
+
+              <div class="mensagem-corpo">
+                <h5>Ivan Porto</h5>
+                <p class="texto-mutado">Estou no trabalho...</p>
+              </div>
+            </div>
+
+            <div class="mensagem">
+              <div class="foto-perfil">
+                <img src="images/msg4.jpeg" alt="mensagem 4" />
+                <div class="active"></div>
+              </div>
+
+              <div class="mensagem-corpo">
+                <h5>André Pereira</h5>
+                <p class="texto-mutado">Boa noite...</p>
+              </div>
+            </div>
+          </div>
+          <!-- fim mensagens -->
+
+          <div class="solicitacao-amigos">
+            <h4>Solicitações</h4>
+            <div class="solicitacao">
+              <div class="info">
+                <div class="foto-perfil">
+                  <img src="images/solicitacao1.jpg" alt="imagem solicitacao1">
+                </div>
+                <div>
+                  <h5>Aline Medina</h5>
+                  <p class="texto-mutado">
+                    8 amigos em comum
+                  </p>
+                </div>
+              </div>
+              <div class="action">
+                <button class="btn btn-primario">Aceitar</button>
+                <button class="btn">Remover</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- fim direita -->
+      </div>
+    </main>
+    <!-- fim principal -->
+
+    <!-- inicio customização de temas -->
+    <div class="customizar-tema">
+      <div class="card">
+        <h2>Customize sua visualização</h2>
+        <p class="texto-mutado">Mude o tamanho da fonte, cor e o fundo.</p>
+
+        <!-- tamanhos de fonte -->
+        <div class="tamanho-fonte">
+          <h4>Tamanho Da Fonte</h4>
+          <div>
+            <h6>Aa</h6>
+            <div class="escolher-fonte">
+              <span class="fonte-1"></span>
+              <span class="fonte-2 active"></span>
+              <span class="fonte-3"></span>
+              <span class="fonte-4"></span>
+              <span class="fonte-5"></span>
+            </div>
+            <h3>Aa</h3>
+          </div>
+        </div>
+        <!-- tamanhos de fonte -->
+
+        <!-- cores -->
+        <div class="cor">
+          <h4>Cor</h4>
+          <div class="escolher-cor">
+            <span class="cor-1 active"></span>
+            <span class="cor-2"></span>
+            <span class="cor-3"></span>
+            <span class="cor-4"></span>
+            <span class="cor-5"></span>
+          </div>
+        </div>
+        <!-- cores -->
+
+        <!-- temas de fundo -->
+        <div class="tema">
+          <h4>Tema De Fundo</h4>
+          <div class="escolher-tema">
+            <div class="tema1 active">
+              <span></span>
+              <h5 for="tema-1">Claro</h5>
+            </div>
+
+            <div class="tema2">
+              <span></span>
+              <h5 for="tema-2">Médio Escuro</h5>
+            </div>
+
+            <div class="tema3">
+              <span></span>
+              <h5 for="tema-3">Escuro Total</h5>
+            </div>
+          </div>
+        </div>
+        <!-- temas de fundo -->
+      </div>
+    </div>
+    <!-- fim customização de temas -->
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
